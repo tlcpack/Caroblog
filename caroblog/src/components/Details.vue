@@ -21,7 +21,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://nameless-spire-79883.herokuapp.com/api/posts/" + this.$route.params.id)
+      .get("https://nameless-spire-79883.herokuapp.com/api/posts/" + this.$route.params.id)
       .then((response) => {
         this.post = response.data;
       });

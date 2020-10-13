@@ -57,7 +57,7 @@ export default {
     methods: {
         create: function () {
             this.submitted = true;
-            axios.post("http://nameless-spire-79883.herokuapp.com/api/posts/", this.post)
+            axios.post("https://nameless-spire-79883.herokuapp.com/api/posts/", this.post)
             .then((response) => {
                 console.log(response);
                 this.$router.push("/");
