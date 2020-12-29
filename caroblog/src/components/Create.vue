@@ -36,7 +36,8 @@
           placeholder="Enter website here"
         />
       </div>
-      <b-button type="submit" class="btn btn-primary" v-b-tooltip.hover.bottom title="This is final">Post!</b-button>
+      <b-button type="submit" class="btn btn-success m-2" v-b-tooltip.hover.bottom title="This is final">Post!</b-button>
+      <b-button type="outline-danger" :to="{ path: '/index'}">Cancel</b-button>
     </form>
   </div>
 </template>
