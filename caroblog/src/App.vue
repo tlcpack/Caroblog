@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div>
     <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h2 class="row justify-content-center">
+      <div class="col-md-9">
+        <h2 class="row justify-content-center mt-5">
           <router-link to="/index">Blog Time!</router-link>
         </h2>
         <div class="row justify-content-center">

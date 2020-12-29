@@ -1,8 +1,8 @@
 <template>
   <div class="pt-5">
-    <div v-if="posts && posts.length">
-      <b-jumbotron class="mb-3" v-for="post of posts" v-bind:key="post.id">
-        <h5 class="display-4">{{ post.title }}</h5>
+    <div v-if="posts && posts.length" class="d-flex flex-wrap justify-content-between">
+      <b-jumbotron class="m-3" v-for="post of posts" v-bind:key="post.id">
+        <h2>{{ post.title }}</h2>
         <p class="lead">{{ post.content }}</p>
         <b-button
           :to="{ name: 'edit', params: { id: post.id } }"
