@@ -1,8 +1,8 @@
 <template>
   <div class="pt-5">
-    <div>
+    <!-- <div>
       <b-spinner v-if="!posts" label="Loading..."></b-spinner>
-    </div>
+    </div> -->
     <div v-if="posts && posts.length">
       <div class="card mb-3" v-for="post of posts" v-bind:key="post.id">
         <div class="row no-gutters">
@@ -48,13 +48,20 @@
         </div>
       </div>
     </div>
-    <p v-if="posts.length == 0">No Posts</p>
+    <div class="d-flex justify-content-center mb-3">
+    <b-spinner style="width: 3rem; height: 3rem;" v-if="posts.length == 0">No Posts</b-spinner>
+    </div>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+
+
 export default {
+  props: {
+    loading: {type: Boolean}
+  },
   data() {
     return {
       posts: [],
