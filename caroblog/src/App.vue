@@ -6,7 +6,7 @@
           <router-link to="/index">Blog Time!</router-link>
         </h2>
         <div class="row justify-content-center">
-        <router-link to='/create' class="m-3 btn btn-sm btn-primary">Create post</router-link>
+        <router-link to='/create' class="m-3 btn btn-primary">Create post</router-link>
         </div>
         <router-view />
         
